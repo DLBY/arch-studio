@@ -1,6 +1,7 @@
 @import './sass/variables';
 @import './sass/fonts';
 
+@import './components/navbar/Navbar';
 @import './components/buttons/LargeBtn/LargeBtn';
 @import './components/buttons/MediumBtn/MediumBtn';
 @import './components/buttons/SmallBtn/SmallBtn';
@@ -16,6 +17,11 @@
 *::after,
 *::before {
     box-sizing: inherit;
+}
+
+ul > li {
+  display: inline;
+  list-style: none;
 }
 
 .btn-slider {

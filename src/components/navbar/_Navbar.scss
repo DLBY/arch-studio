@@ -1,0 +1,48 @@
+@mixin space-layout {
+  padding:2em 2em;
+}
+
+// REMOVE LATER
+ul {
+  display:none;
+}
+
+//Hamburger menu
+.navigation {
+  @include space-layout;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  .menu-btn {
+    z-index: 50;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height: 17px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    .menu-btn__bar {
+      display: inline-block;
+      width: 24px;
+      height: 3px;
+      background-color: $very-dark-blue;
+      -webkit-transition: all .5s;
+      transition: all .5s;
+    }
+  }
+}
+
+/* RESPONSIVE */
+@media #{$tablet} {
+  .navigation {
+    .menu-btn {
+      display: none;
+    }
+  }
+  ul {
+    display:block;
+  }
+}

@@ -1,20 +1,37 @@
 import React from 'react';
-import LargeBtn from './components/buttons/LargeBtn/LargeBtn';
-import MediumBtn from './components/buttons/MediumBtn/MediumBtn';
-import SmallBtn from './components/buttons/SmallBtn/SmallBtn';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/navbar/Navbar';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
+import Home from './pages/Home/Home';
+import Portfolio from './pages/Portfolio/Portfolio';
 
 const App = () => (
-  <div>
-    <p>Hello its App</p>
-    <div className="btn-container">
-      <LargeBtn text="Button 1" />
-      <MediumBtn />
-      <div className="btn-slider">
-        <SmallBtn number="01" />
-        <SmallBtn number="02" />
+  <Router>
+    <Navbar />
+    <main>
+      <Switch>
+        <Route path="/home" exact>
+          <Home />
+        </Route>
+
+        <Route path="/portfolio">
+          <Portfolio />
+        </Route>
+
+        <Route path="/about">
+          <About />
+        </Route>
+
+        <Route path="/contact">
+          <Contact />
+        </Route>
+      </Switch>
+      <div>
+        <p>Hello its App</p>
       </div>
-    </div>
-  </div>
+    </main>
+  </Router>
 );
 
 export default App;

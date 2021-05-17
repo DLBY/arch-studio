@@ -8,4 +8,12 @@ $light-grey: #C8CCD8;
 $very-light-grey:#EEEFF4;
 $red:#DF5656;
 
-/* Typo */
+/* Responsive */
+//768 px
+$tablet: "only screen and (min-width: 768px)";
+
+//1024 px
+$medium: "only screen and (min-width: 1024px)";
+
+//1440 px +
+$large: "only screen and (min-width: 1440px)";
