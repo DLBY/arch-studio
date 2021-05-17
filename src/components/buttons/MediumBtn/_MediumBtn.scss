@@ -1,0 +1,25 @@
+.medium-btn {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;
+  border: none;
+  width: 80px;
+  height:80px;
+  color: white;
+  background-color:$very-dark-blue;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  img {
+    filter: invert(1);
+  }
+  &:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color:$dark-grey;
+  }
+  &:active {
+    background-color:$light-grey;
+  }
+}

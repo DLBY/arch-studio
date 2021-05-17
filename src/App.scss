@@ -1,7 +1,23 @@
 @import './sass/variables';
-@import './sass/mixins';
+@import './sass/fonts';
 
-body {
-  font-family: $font;
-  color:$red;
+@import './components/buttons/LargeBtn/LargeBtn';
+@import './components/buttons/MediumBtn/MediumBtn';
+@import './components/buttons/SmallBtn/SmallBtn';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.btn-slider {
+  display:flex;
 }

@@ -1,0 +1,26 @@
+.large-btn {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;
+  border: none;
+  width: 177px;
+  height:72px;
+  color: white;
+  background-color:$very-dark-blue;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  img {
+    filter: invert(1);
+    margin-left:1em;
+  }
+  &:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color:$dark-grey;
+  }
+  &:active {
+    background-color:$light-grey;
+  }
+}

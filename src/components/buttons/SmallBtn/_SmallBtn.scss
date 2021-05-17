@@ -1,0 +1,29 @@
+.small-btn {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:15px;
+  line-height:25px;
+  font-weight: bold;
+  cursor:pointer;
+  border: none;
+  width: 80px;
+  height:80px;
+  color: $medium-grey;
+  background-color:$white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  img {
+    filter: invert(1);
+  }
+  &:hover {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color:$very-light-grey;
+  }
+  &:focus {
+    color:$white;
+    background-color:$very-dark-blue;
+  }
+}
