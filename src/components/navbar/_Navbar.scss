@@ -55,6 +55,11 @@ ul {
       line-height: 25px;
       letter-spacing:0px;
       color:$medium-grey;
+      transition: color .5s ease;
+    }
+    li :hover {
+      transition: color .5s ease;
+      color:$very-dark-blue;
     }
   }
 }
@@ -68,5 +73,11 @@ ul {
 @media #{$large} {
   .navigation {
     padding:3.5em 41em 3.5em 11em;
+  }
+}
+
+@media #{$xxl} {
+  .navigation {
+    padding:3.5em 58em 3.5em 25em;
   }
 }
