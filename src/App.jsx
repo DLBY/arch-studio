@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  Redirect,
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
@@ -10,6 +15,10 @@ const App = () => (
   <Router>
     <Navbar />
     <main>
+      <Route exact path="/">
+        <Redirect to="/home" />
+      </Route>
+
       <Switch>
         <Route path="/home" exact>
           <Home />
