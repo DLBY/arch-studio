@@ -27,9 +27,7 @@ const App = () => (
           <Contact />
         </Route>
       </Switch>
-      <div>
-        <p>Hello its App</p>
-      </div>
+      <div />
     </main>
   </Router>
 );

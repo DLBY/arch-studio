@@ -1,0 +1,40 @@
+.page-name {
+  display:none;
+}
+
+@media #{$tablet} {
+  .page-name {
+    display:block;
+    display:flex;
+    align-items:center;
+    height:25px;
+    width:450px;
+    position: absolute;
+    top: 213px;
+    left:-170px;
+    transform: rotate(90deg);
+    .line {
+    height:1px;
+    width:104px;
+    background-color:$light-grey;
+    border:none;
+  }
+    .path-name {
+      letter-spacing:15px;
+      line-height: 25px;
+      color:$light-grey;
+      text-transform:uppercase;
+      margin-left:3em
+    }
+  }
+}
+
+@media #{$medium} {
+
+}
+
+@media #{$large} {
+  .page-name {
+    left:-140px;
+  }
+}

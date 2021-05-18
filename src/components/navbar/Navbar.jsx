@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo.svg';
+import PageName from '../page-name/PageName';
 
 const Navbar = () => (
   <nav>
     <div className="navigation">
+      <PageName />
       <Link to="/home">
         <img src={Logo} alt="Arch logo" />
       </Link>
@@ -19,7 +21,7 @@ const Navbar = () => (
         <span aria-hidden="true" className="menu-btn__bar menu-btn__bar--2" />
         <span aria-hidden="true" className="menu-btn__bar menu-btn__bar--3" />
       </button>
-      <ul>
+      <ul className="navbar__links">
         <li>
           <Link to="/portfolio">Portfolio</Link>
         </li>
