@@ -1,0 +1,36 @@
+@mixin imgStyle {
+  height:240px;
+  width:100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-del-sol.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.featured {
+  width:311px;
+  margin:auto;
+  h2 {
+    text-align:left;
+    font-size:40px;
+    line-height:48px;
+    letter-spacing:-1.43px;
+  }
+  .featured__img-container {
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content:center;
+    .featured__img--item.item1 {
+      @include imgStyle;
+    }
+    .featured__img--item.item2 {
+      @include imgStyle;
+      background-image: url('../../assets/portfolio/mobile/image-228b.jpg')
+    }
+    .featured__img--item.item3 {
+      @include imgStyle;
+      background-image: url('../../assets/portfolio/mobile/image-prototype.jpg')
+    }
+  }
+}

@@ -4,10 +4,14 @@
 
 @import './components/navbar/Navbar';
 @import './components/buttons/LargeBtn/LargeBtn';
+@import './components/buttons/LargeBtn2/LargeBtn2';
 @import './components/buttons/MediumBtn/MediumBtn';
 @import './components/buttons/SmallBtn/SmallBtn';
 @import './components/page-name/PageName';
 @import './components/hero-img/HeroImg';
+@import './components/welcome-text/WelcomeText';
+@import './components/hero-about/HeroAbout';
+@import './components/featured/Featured';
 
 * {
   margin: 0;

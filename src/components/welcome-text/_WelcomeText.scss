@@ -1,0 +1,24 @@
+.welcome__text {
+  width:311px;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  margin:auto;
+  .horizontal {
+    margin:4em 0;
+    width:65px;
+    height:1px;
+    background-color:$light-grey;
+  }
+  h2 {
+    text-align:left;
+    font-size:40px;
+    line-height:48px;
+    letter-spacing:-1.43px;
+  }
+  p {
+    margin-top:1em;
+    text-align:left;
+  }
+}
