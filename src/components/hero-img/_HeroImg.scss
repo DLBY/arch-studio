@@ -1,0 +1,26 @@
+.hero__img {
+  height:560px;
+  width:100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/home/mobile/image-hero-paramour.jpg');
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  .hero__text {
+    text-align:left;
+    width:311px;
+  }
+  h2, p {
+    color:$white;
+  }
+  .hero__description {
+    margin-top:1em;
+  }
+  .hero__btn {
+    margin-top: 2.5em;
+  }
+}

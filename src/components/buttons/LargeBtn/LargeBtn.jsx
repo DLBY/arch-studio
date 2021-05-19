@@ -3,7 +3,7 @@ import arrow from '../../../assets/icons/icon-arrow.svg';
 
 const LargeBtn = ({ text }) => (
   <button className="large-btn" type="button">
-    {text}
+    <p>{text}</p>
     <img src={arrow} alt="arrow" className="arrow" />
   </button>
 );
