@@ -16,7 +16,7 @@ const Navbar = () => {
         </Link>
 
         <button
-          onClick={() => setIsOpen(true)}
+          onClick={() => setIsOpen(!isOpen)}
           id="menu-btn"
           className="menu-btn header__menu-btn"
           title="hamburger menu"
@@ -27,9 +27,7 @@ const Navbar = () => {
           <span aria-hidden="true" className="menu-btn__bar menu-btn__bar--3" />
         </button>
 
-        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-          Fancy Modal
-        </Modal>
+        <Modal open={isOpen} onClose={() => setIsOpen(false)} />
 
         <ul className="navbar__links">
           <li>
