@@ -1,5 +1,5 @@
 import React from 'react';
-import LargeBtn3 from '../buttons/LargeBtn3/LargeBtn3';
+import LargeBtn3 from '../../buttons/LargeBtn3/LargeBtn3';
 
 const Featured = () => (
   <section className="featured">

@@ -1,8 +1,8 @@
 import React from 'react';
-import Featured from '../../components/featured/Featured';
-import HeroAbout from '../../components/hero-about/HeroAbout';
-import HeroImg from '../../components/hero-img/HeroImg';
-import WelcomeText from '../../components/welcome-text/WelcomeText';
+import Featured from '../../components/home/featured/Featured';
+import HeroAbout from '../../components/home/hero-about/HeroAbout';
+import HeroImg from '../../components/home/hero-img/HeroImg';
+import WelcomeText from '../../components/home/welcome-text/WelcomeText';
 
 const Home = () => (
   <>

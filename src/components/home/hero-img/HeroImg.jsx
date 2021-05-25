@@ -1,5 +1,5 @@
 import React from 'react';
-import LargeBtn from '../buttons/LargeBtn/LargeBtn';
+import LargeBtn from '../../buttons/LargeBtn/LargeBtn';
 
 const HeroImg = () => (
   <div className="hero__img">
