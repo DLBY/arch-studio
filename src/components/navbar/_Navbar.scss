@@ -2,13 +2,12 @@
   padding:2em 2em;
 }
 
-// REMOVE LATER
-ul {
-  display:none;
-}
 
 //Hamburger menu
 .navigation {
+  ul {
+    display:none;
+  }
   @include space-layout;
   display: flex;
   flex-direction: row;
@@ -42,44 +41,44 @@ ul {
     .menu-btn {
       display: none;
     }
-  }
-  ul {
-    display:flex;
-    width:100%;
-    justify-content: space-around;
-    margin-left:1em;
-    a {
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: bold;
-      line-height: 25px;
-      letter-spacing:0px;
-      color:$medium-grey;
-      transition: color .5s ease;
-    }
-    li :hover {
-      transition: color .5s ease;
-      color:$very-dark-blue;
-    }
-    li.active {
-      position: relative;
-      &:before {
-        content:'';
-        position: absolute;
-        width:24px;
-        height:1px;
-        bottom:-8px;
-        left:16px;
-        background-color: $medium-grey;
-        visibility:hidden;
-        transform: scaleX(0);
-        transition: all .5s;
-    }
-    &:focus:before {
-      visibility:visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
+    ul {
+      display:flex;
+      width:100%;
+      justify-content: space-around;
+      margin-left:1em;
+      a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 25px;
+        letter-spacing:0px;
+        color:$medium-grey;
+        transition: color .5s ease;
+      }
+      li :hover {
+        transition: color .5s ease;
+        color:$very-dark-blue;
+      }
+      li.active {
+        position: relative;
+        &:before {
+          content:'';
+          position: absolute;
+          width:24px;
+          height:1px;
+          bottom:-8px;
+          left:16px;
+          background-color: $medium-grey;
+          visibility:hidden;
+          transform: scaleX(0);
+          transition: all .5s;
+      }
+      &:focus:before {
+        visibility:visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+      }
     }
   }
 }

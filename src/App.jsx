@@ -5,6 +5,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
+import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
@@ -38,6 +39,7 @@ const App = () => (
       </Switch>
       <div />
     </main>
+    <Footer />
   </Router>
 );
 

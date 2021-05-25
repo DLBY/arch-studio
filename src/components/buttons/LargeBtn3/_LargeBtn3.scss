@@ -1,0 +1,9 @@
+.large-btn3 {
+  @extend .large-btn;
+  width: 311px;
+  height:72px;
+  p {
+    color:white;
+    font-weight: 700;
+  }
+}

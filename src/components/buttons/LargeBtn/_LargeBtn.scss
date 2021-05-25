@@ -6,12 +6,12 @@
   border: none;
   width: 252px;
   height:72px;
-  color: white;
   background-color:$very-dark-blue;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   outline: none;
   p {
+    color: white;
     font-weight: 700;
   }
   img {

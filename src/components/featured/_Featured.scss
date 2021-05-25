@@ -3,14 +3,17 @@
   width:100%;
   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-del-sol.jpg');
   background-repeat:no-repeat;
-  background-size: cover;
+  background-size: contain;
   position: relative;
+  margin:1em 0;
 }
 
 .featured {
   width:311px;
   margin:auto;
   h2 {
+    margin-top:1em;
+    margin-bottom:.4em;
     text-align:left;
     font-size:40px;
     line-height:48px;
@@ -20,17 +23,34 @@
     display:flex;
     flex-direction: column;
     align-self: center;
-    justify-content:center;
+    .featured__img--item {
+      display:flex;
+      flex-direction: column;
+      justify-content:flex-end;
+      h3 {
+        color: $white;
+      }
+      .featured__img-text {
+        margin:0 0 1.5em 1.5em;
+        p {
+          color:$white;
+          filter: brightness(.8);
+        }
+      }
+    }
     .featured__img--item.item1 {
       @include imgStyle;
     }
     .featured__img--item.item2 {
       @include imgStyle;
-      background-image: url('../../assets/portfolio/mobile/image-228b.jpg')
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-228b.jpg')
     }
     .featured__img--item.item3 {
       @include imgStyle;
-      background-image: url('../../assets/portfolio/mobile/image-prototype.jpg')
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-prototype.jpg')
     }
+  }
+  .featured__btn-container {
+    margin-top:0.9em;
   }
 }
