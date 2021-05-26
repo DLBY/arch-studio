@@ -27,7 +27,21 @@ const Navbar = () => {
           <span aria-hidden="true" className="menu-btn__bar menu-btn__bar--3" />
         </button>
 
-        <Modal open={isOpen} onClose={() => setIsOpen(false)} />
+        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+          <ul className="modalMenu__links">
+            <li>
+              <Link to="/portfolio">Portfolio</Link>
+            </li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+
+            <li />
+          </ul>
+        </Modal>
 
         <ul className="navbar__links">
           <li>

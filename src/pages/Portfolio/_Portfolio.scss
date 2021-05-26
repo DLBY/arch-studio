@@ -1,0 +1,73 @@
+.portfolio__container {
+  margin-top:3em;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  .project__img--item {
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+  }
+  .project__seraph--text {
+    margin:0 0 1.5em 1.5em;
+  }
+  .project__img--item.seraph {
+    @include imgStyle;
+    width:311px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-seraph.jpg');
+    .project__seraph--text {
+      text-align:left;
+      width:149px;
+    }
+  }
+  .project__img--item.eebox {
+    @extend .project__img--item, .seraph;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-eebox.jpg');
+    }
+    .project__img-title, .project__img-desc {
+      color: $white;
+    }
+    .project__img-desc {
+      filter: brightness(.8);
+    }
+  .project__img--item.federal {
+    @extend .project__img--item, .seraph;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-federal.jpg');
+    }
+  .project__img--item.del-sol {
+    @extend .project__img--item, .seraph;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-del-sol.jpg');
+    }
+  .project__img--item.prototype {
+    @extend .project__img--item, .seraph;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-prototype.jpg');
+    }
+  .project__img--item.tower {
+    @extend .project__img--item, .seraph;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-228b.jpg');
+    }
+  .project__img--item.hotel {
+    @extend .project__img--item, .seraph;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-edelweiss.jpg');
+    }
+  .project__img--item.netcry {
+    @extend .project__img--item, .seraph;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-netcry.jpg');
+    }
+  .project__img--item.hypers {
+    @extend .project__img--item, .seraph;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-hypers.jpg');
+    }
+  .project__img--item.sxiv {
+    @extend .project__img--item, .seraph;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-sxiv.jpg');
+    }
+  .project__img--item.trinity {
+    @extend .project__img--item, .seraph;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-trinity.jpg');
+    }
+  .project__img--item.paramour {
+    @extend .project__img--item, .seraph;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/portfolio/mobile/image-paramour.jpg');
+    }
+}
