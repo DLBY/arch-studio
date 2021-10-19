@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Portfolio = () => (
+  // TEST //
   <section className="portfolio__container">
     <div className="project__img-container">
       <div className="project__img--item seraph">
